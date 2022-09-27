@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "e3265250-9ef9-4bdf-9be4-08a93508f40b",
+		"name": "Pichincha Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21635889"
+	},
+	"item": [
+		{
+			"name": "Get Cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/cliente/getById/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"cliente",
+						"getById",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cliente ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/cliente/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"cliente",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cuenta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/cuenta/getById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"cuenta",
+						"getById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Movimiento",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/movimiento/getById/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"movimiento",
+						"getById",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Movimiento ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/movimiento/estadoCuenta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"movimiento",
+						"estadoCuenta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Cliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/cliente/getById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"cliente",
+						"getById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Cliente",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Maria elenea\",\r\n    \"genero\": \"F\",\r\n    \"edad\": 60,\r\n    \"identificacion\": \"14200125\",\r\n    \"direccion\": \"Av sofia 12\",\r\n    \"telefono\": \"777888999\",\r\n    \"clave\": \"888555444\",\r\n    \"estado\": \"0\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/cliente/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"cliente",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Cliente",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Karla Ventura\",\r\n    \"genero\": \"F\",\r\n    \"edad\": 55,\r\n    \"identificacion\": \"25800236\",\r\n    \"direccion\": \"Av parque 12\",\r\n    \"telefono\": \"987269551\",\r\n    \"clave\": \"3620145\",\r\n    \"estado\": \"0\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/cliente/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"cliente",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
